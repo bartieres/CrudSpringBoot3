@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:13306/crud_spring_boot_3
+    url: jdbc:mysql://localhost:13306/crud_spring_boot_3_test
     username: root
     password: root
 
