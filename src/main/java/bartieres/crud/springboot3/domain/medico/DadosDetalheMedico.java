@@ -1,6 +1,6 @@
-package bartieres.crud.springboot3.medico;
+package bartieres.crud.springboot3.domain.medico;
 
-import bartieres.crud.springboot3.endereco.Endereco;
+import bartieres.crud.springboot3.domain.endereco.Endereco;
 
 public record DadosDetalheMedico(Long id, String nome, String email, String crm,
                                  EEspecialidade especialidade, Endereco endereco) {

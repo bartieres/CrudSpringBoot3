@@ -1,4 +1,4 @@
-package bartieres.crud.springboot3.medico;
+package bartieres.crud.springboot3.domain.medico;
 
 public enum EEspecialidade {
 

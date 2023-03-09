@@ -1,4 +1,4 @@
-package bartieres.crud.springboot3.endereco;
+package bartieres.crud.springboot3.domain.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

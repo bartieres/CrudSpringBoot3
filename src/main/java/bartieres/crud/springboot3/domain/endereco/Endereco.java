@@ -1,4 +1,4 @@
-package bartieres.crud.springboot3.endereco;
+package bartieres.crud.springboot3.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;

@@ -1,6 +1,9 @@
 package bartieres.crud.springboot3.controller;
 
-import bartieres.crud.springboot3.medico.*;
+import bartieres.crud.springboot3.domain.medico.DadosListaMedico;
+import bartieres.crud.springboot3.domain.medico.Medico;
+import bartieres.crud.springboot3.domain.medico.MedicoRepository;
+import bartieres.crud.springboot3.domain.medico.*;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

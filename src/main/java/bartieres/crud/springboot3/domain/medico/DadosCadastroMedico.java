@@ -1,6 +1,6 @@
-package bartieres.crud.springboot3.medico;
+package bartieres.crud.springboot3.domain.medico;
 
-import bartieres.crud.springboot3.endereco.DadosEndereco;
+import bartieres.crud.springboot3.domain.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
