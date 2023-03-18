@@ -1,4 +1,4 @@
-package bartieres.crud.springboot3.infra;
+package bartieres.crud.springboot3.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
