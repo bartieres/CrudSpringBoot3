@@ -1,5 +1,6 @@
 package bartieres.crud.springboot3.domain.consulta;
 
+import bartieres.crud.springboot3.domain.medico.EEspecialidade;
 import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotNull;
 
@@ -13,5 +14,7 @@ public record DadosAgendamentoConsulta(
 
         @NotNull
         @Future
-        LocalDateTime data) {
+        LocalDateTime data,
+
+        EEspecialidade especialidade) {
 }
