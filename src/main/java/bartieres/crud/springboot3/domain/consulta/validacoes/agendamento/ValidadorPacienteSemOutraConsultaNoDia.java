@@ -1,13 +1,18 @@
-package bartieres.crud.springboot3.domain.consulta.validacoes;
+package bartieres.crud.springboot3.domain.consulta.validacoes.agendamento;
 
 import bartieres.crud.springboot3.domain.ValidacaoException;
 import bartieres.crud.springboot3.domain.consulta.ConsultaRepository;
 import bartieres.crud.springboot3.domain.consulta.DadosAgendamentoConsulta;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public class ValidadorPacienteSemOutraConsultaNoDia {
+@Component
+public class ValidadorPacienteSemOutraConsultaNoDia implements ValidadorAgendamentoConsulta{
 
+    @Autowired
     private ConsultaRepository repository;
 
+    @Override
     public void validar(DadosAgendamentoConsulta dados) {
         var primeiroHorario = dados.data().withHour(7);
         var ultimoHorario = dados.data().withHour(18);

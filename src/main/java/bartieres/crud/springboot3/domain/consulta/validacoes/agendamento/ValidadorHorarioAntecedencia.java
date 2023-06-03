@@ -1,13 +1,16 @@
-package bartieres.crud.springboot3.domain.consulta.validacoes;
+package bartieres.crud.springboot3.domain.consulta.validacoes.agendamento;
 
 import bartieres.crud.springboot3.domain.ValidacaoException;
 import bartieres.crud.springboot3.domain.consulta.DadosAgendamentoConsulta;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 
-public class ValidadorHorarioAntecedencia {
+@Component("ValidadorHorarioAntecedenciaAgendamento")
+public class ValidadorHorarioAntecedencia implements ValidadorAgendamentoConsulta {
 
+    @Override
     public void validar(DadosAgendamentoConsulta dados) {
 
         var dataConsulta = dados.data();

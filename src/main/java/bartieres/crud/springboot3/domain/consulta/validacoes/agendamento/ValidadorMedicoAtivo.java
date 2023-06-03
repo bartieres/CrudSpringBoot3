@@ -1,13 +1,18 @@
-package bartieres.crud.springboot3.domain.consulta.validacoes;
+package bartieres.crud.springboot3.domain.consulta.validacoes.agendamento;
 
 import bartieres.crud.springboot3.domain.ValidacaoException;
 import bartieres.crud.springboot3.domain.consulta.DadosAgendamentoConsulta;
 import bartieres.crud.springboot3.domain.medico.MedicoRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-public class ValidadorMedicoAtivo {
+@Component
+public class ValidadorMedicoAtivo implements ValidadorAgendamentoConsulta {
 
+    @Autowired
     private MedicoRepository repository;
 
+    @Override
     public void validar(DadosAgendamentoConsulta dados) {
 
         if (dados.idMedico() == null) {

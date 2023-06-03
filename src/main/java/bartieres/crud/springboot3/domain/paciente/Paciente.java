@@ -17,4 +17,12 @@ public class Paciente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private boolean ativo;
+    private String nome;
+
+    public Paciente(DadosCadastroPaciente dados) {
+        this.ativo = true;
+        this.nome = dados.nome();
+    }
 }
