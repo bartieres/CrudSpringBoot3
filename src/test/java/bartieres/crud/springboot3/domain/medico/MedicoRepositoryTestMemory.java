@@ -1,4 +1,4 @@
-package bartieres.crud.springboot3.domai.medico;
+package bartieres.crud.springboot3.domain.medico;
 
 import bartieres.crud.springboot3.domain.consulta.Consulta;
 import bartieres.crud.springboot3.domain.endereco.DadosEndereco;
@@ -12,20 +12,20 @@ import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.autoconfigure.orm.jpa.TestEntityManager;
-import org.springframework.test.context.ActiveProfiles;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.temporal.TemporalAdjusters;
 
+/**
+ * Para usar teste com banco de memoria, basta adicionar a dependência do H2
+ * e não definir arquivo -test.yml nem ActiveProfiles
+ */
 @DataJpaTest
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
-@ActiveProfiles("test-mysql")
-public class MedicoRepositoryTestMySql {
+public class MedicoRepositoryTestMemory {
 
     @Autowired
     private MedicoRepository medicoRepository;
