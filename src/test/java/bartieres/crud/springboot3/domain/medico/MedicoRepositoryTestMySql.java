@@ -2,10 +2,6 @@ package bartieres.crud.springboot3.domain.medico;
 
 import bartieres.crud.springboot3.domain.consulta.Consulta;
 import bartieres.crud.springboot3.domain.endereco.DadosEndereco;
-import bartieres.crud.springboot3.domain.medico.DadosCadastroMedico;
-import bartieres.crud.springboot3.domain.medico.EEspecialidade;
-import bartieres.crud.springboot3.domain.medico.Medico;
-import bartieres.crud.springboot3.domain.medico.MedicoRepository;
 import bartieres.crud.springboot3.domain.paciente.DadosCadastroPaciente;
 import bartieres.crud.springboot3.domain.paciente.Paciente;
 import org.assertj.core.api.Assertions;
