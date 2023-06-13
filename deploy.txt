@@ -1,0 +1,3 @@
+
+// Para realizar o start da aplicação no servidor, utilize os camandos abaixo:
+java -Dspring.profiles.active=prod -DDATASOURCE_URL=jdbc:mysql://localhost:13306/crud_spring_boot_3_test -DDATASOURCE_USERNAME=root -DDATASOURCE_PASSWORD=root -jar target/CrudSpringBoot3-0.0.1-SNAPSHOT.jar
